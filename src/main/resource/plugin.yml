@@ -1,1 +1,17 @@
+name: GearLimitations
+version: 1.0.0
+main: com.gearlimitations.GearLimitations
+api-version: '1.21'
+description: Tier-based gear progression system for PaperMC
+author: GearLimitations
 
+commands:
+  gl:
+    description: Main command for GearLimitations plugin
+    usage: /<command> <unlock|testsound|reload|status> [tier]
+    permission: gearlimitations.admin
+
+permissions:
+  gearlimitations.admin:
+    description: Allows access to all GearLimitations admin commands
+    default: op
