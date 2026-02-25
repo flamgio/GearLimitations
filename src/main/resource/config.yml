@@ -1,1 +1,37 @@
+# GearLimitations Configuration
+# Tier-based gear progression system
 
+# Currently locked tiers (players cannot use gear from these tiers)
+locked-tiers:
+  - GOLDEN
+  - COPPER
+  - DIAMOND
+  - NETHERITE
+
+# Unlock history with dates (format: YYYY-MM-DD)
+# null means not yet unlocked
+unlock-dates:
+  GOLDEN: null
+  COPPER: null
+  DIAMOND: null
+  NETHERITE: null
+
+# Messages (use & for color codes)
+messages:
+  tier-locked: "&cYou cannot use %tier% gear yet! This tier is still locked."
+  tier-unlocked: "&aTier %tier% has been unlocked on %date%!"
+  already-unlocked: "&eTier %tier% is already unlocked."
+  invalid-tier: "&cInvalid tier! Valid tiers: GOLDEN, COPPER, DIAMOND, NETHERITE"
+  enter-date: "&eEnter the unlock date in chat (format: YYYY-MM-DD):"
+  invalid-date: "&cInvalid date format! Please use YYYY-MM-DD"
+  same-date-error: "&cYou cannot unlock multiple tiers on the same date!"
+  prerequisite-error: "&cYou must unlock GOLDEN or COPPER before unlocking %tier%!"
+  no-permission: "&cYou don't have permission to do this!"
+  config-reloaded: "&aConfiguration reloaded!"
+
+# XP Effect Settings
+xp-effect:
+  enabled: true
+  sound-volume: 0.7
+  sound-pitch: 1.0
+  particle-count: 8
